@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 20px 20px;
+}
+.logo img{
+    display: flex;
+    border-radius: 50%;
+}
+.lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 3rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin: 20px 20px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    background-color: burlywood;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+}
