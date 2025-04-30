@@ -41,3 +41,24 @@ this.state = {
 }
 
 setState({gender : "female", age : this.state.age + 1, name: "chaitanya"})
+
+
+
+Tasks : -
+
+1. TypedValue.jsx -> cbc syntax -> 
+this.state = {
+names : ["","","",""], -<>
+colors : ["","","",""]
+}
+
+jsx- > 
+""
+""
+""
+""
+
+jsx -> {
+    <h1></h1>
+    <input />
+}
