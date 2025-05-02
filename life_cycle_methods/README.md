@@ -17,4 +17,12 @@ Creation Phase or Mounting Phase:- This phase is all about creating a component 
 
 Updation Phase :- This gets trigger whenever a particular value gets updated
 
+constructor(){}
+render(){}
+componentDidUpdate(prevState, prevProps){
+    console.log(prevState.count) // {}
+}
+
+//1 
+
 Deletetion Phase or unmounting phase : - Component gets deleted or removed
