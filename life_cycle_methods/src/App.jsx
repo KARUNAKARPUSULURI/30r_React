@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Counter from "./Counter";
 import FetchProduct from "./FetchProduct";
+import Questions from "./Questions";
 
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
       count: 0,
       data: []
     }
-    console.log("Constructor")
+    // console.log("Constructor")
   }
 
   fetchProducts = async () => {
@@ -21,17 +22,18 @@ class App extends Component {
 
 
   componentDidMount() {
-    console.log("component did mount")
+    // console.log("component did mount")
     // this.fetchProducts()
     fetch("https://fakestoreapi.com/products").then(res => res.json()).then(data => this.setState({ data: data }))
   }
 
   render() {
-    console.log("render", this.state.data)
+    // console.log("render", this.state.data)
     // console.log("fetching...",this.fetchProducts())
     return (
       <>
-        <FetchProduct />
+      <Questions />
+        {/* <FetchProduct /> */}
         {/* <Counter />
         <h1>Counter : {this.state.count}</h1>
         <button onClick={() => this.setState({ count: this.state.count + 1 })}>Click</button>

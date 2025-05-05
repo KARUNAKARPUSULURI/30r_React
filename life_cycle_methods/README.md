@@ -23,6 +23,6 @@ componentDidUpdate(prevState, prevProps){
     console.log(prevState.count) // {}
 }
 
-//1 
+//1 -> click -> 2
 
 Deletetion Phase or unmounting phase : - Component gets deleted or removed

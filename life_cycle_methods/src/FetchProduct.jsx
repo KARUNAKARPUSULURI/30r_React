@@ -20,9 +20,10 @@ export default class FetchProduct extends Component {
                 .then(data => this.setState({ product: data }))
         }
     }
-    
+
     //1 - 1 -> X -> 2
     //1 - 2 ->if(1 !== 2){api}   2-2 -> if(2 !== 2) {}
+    //
     render() {
         return (
             <div>
