@@ -8,15 +8,20 @@ const root = createRoot(document.getElementById('root'))
 function Counter() {
   const [count, setCount] = useState(0) //it returns a stateful value and a function to update it
   const [age, setAge] = useState(0) //it returns a stateful value and a function to update it
-  const [name, setName] = useState(0) //it returns a stateful value and a function to update it
+  const [name, setName] = useState("karunakar") //it returns a stateful value and a function to update it
   const [email, setEmail] = useState(0) //it returns a stateful value and a function to update it
 
+  // Queue = ["chaitanya", "Hemanth"]
+  // QueueC = [1, 3, 2]
   const handleClick = () => {
-    setCount(count) //new value
+    console.log("name", name)
+    setName("chaitanya")
+    setCount((prev)=> prev + 1 ) //re-render
   }
+
   return (
     <>
-      <h1>Counter : {count}</h1>
+      <h1>Counter : {count} - {name}</h1>
       <button onClick={handleClick}>Click</button>
     </>
   )

@@ -5,7 +5,6 @@ Phase 1 -> functional based components -> drawbacks -> ?
 -> we dont have state in fbc -> stateless components
 -> we dont have life cycle methods -> X
 -> this  
-
 ------------------------------
 
 Phase 2 -> Class based components -> advantages ->
@@ -65,3 +64,36 @@ useState:-
           -> useState({namae: "karunakar"})  -> [{name : "karunakar"}, setState]
           -> useState([1,2,3,4])  -> [[1,2,3,4], setState]
           -> useState(()=>{})  -> [()=>{}, setState] -> lazy initialization
+
+----------------------------------------------------------------------------------------
+
+Asynchronous of setstate with batching updates
+
+Closures -> js feature -> 
+
+stale -> outdated value or old value -> stale value 
+stale closures
+
+function Counter(){
+    const [count, setCount] = useState(0);  //1
+    const [age, setAge] = useState(0); //1
+    function handleClick(){
+        console.log(count) //0
+        setCount(count + 1) //0 -> 1     re-render     count  is coming from its lexical parent
+        setCount(count + 1) //0 -> 2        again re-render
+        setCount(count + 1) //0 -> 6      again re-render
+    }
+    return <button onClick = {handleClick}>
+}
+
+Batching -> Combining updates and procesing them into a single render
+React internal queue -> [1, 1, 1]
+               queue -> [1, 2, 3]
+Schedule -> React processes the updates and fixes a time
+
+setCount()
+[1, 2, 3] -> [1, 3, 6] -> 6
+setCount((prev)=> 0 + 1 ) // 1 -> react internal memory -> [1]
+setCount((prev)=> 1 + 2 ) // 2 -> 
+setCount((prev)=> 3 + 3 ) // 3 -> 
+---------------------------------------------------------
