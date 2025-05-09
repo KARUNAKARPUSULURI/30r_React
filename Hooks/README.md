@@ -38,6 +38,21 @@ Types:-
 #Basic hooks:- 
 useState -> state management -> 
 useEffect -> to perform side effects
+
+image -> video
+image, audio ->  video
+
+{
+    id : 2b32,
+    artistPhoto : url,
+    artistName : taylor,
+    songname : enchanted,
+    audio : url,
+    video : url,  
+}
+--------------------------------
+ 
+
 ---------------------------------------------
 #Advanced Hooks:- 
 useRef -> to interact with the dom nodes directly without causing any re-renders
@@ -97,3 +112,70 @@ setCount((prev)=> 0 + 1 ) // 1 -> react internal memory -> [1]
 setCount((prev)=> 1 + 2 ) // 2 -> 
 setCount((prev)=> 3 + 3 ) // 3 -> 
 ---------------------------------------------------------
+<!-- console.log(count)  // 0
+setCount(count - 1); // 0 - 1 => -1
+setCount(prev => prev + 1); // -1 + 1 => 0
+
+
+Queue = [-1, 0] -->
+----------------------------------------------------------------------------
+
+
+useEffect:-  To perform side effects -> 
+
+side effects :- network calls, function calls, subscriptions, timer funtions, etc.,
+
+function useEffect(){}
+-----------------------------------------------------------------------------------------------------------------
+
+FLCIKERING UI -> 
+
+Batching?    X
+
+
+-> CLEARING INTERVAL
+
+
+-----------------------------------------------------
+
+
+React-router-dom :- 
+It is a open source react library which is used to build single page applications fully featured with client side routing as well as server side routing that too enables dynamic routing, that also routing(loads the content without refreshing the page even when user navigate between page.)
+-> Now, you can use Link tag for navigating between pages with refreshing
+
+Link -> BrowserRouter(APP)
+used to build single page applications
+library
+fully featured cliend side and server side routing 
+dynamic routing
+display pages and allow userd to navigate them
+ page is never refreshed  instead the content is dynamically fetched based on the URL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

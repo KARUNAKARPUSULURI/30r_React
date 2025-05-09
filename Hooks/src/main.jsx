@@ -1,9 +1,10 @@
 import React, { StrictMode, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
+import UseEffect from './UseEffect/UseEffect.jsx'
+import "bootstrap/dist/css/bootstrap.min.css";
 const root = createRoot(document.getElementById('root'))
+import App from './App.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 function Counter() {
   const [count, setCount] = useState(0) //it returns a stateful value and a function to update it
@@ -16,7 +17,7 @@ function Counter() {
   const handleClick = () => {
     console.log("name", name)
     setName("chaitanya")
-    setCount((prev)=> prev + 1 ) //re-render
+    setCount((prev) => prev + 1) //re-render
   }
 
   return (
@@ -27,4 +28,8 @@ function Counter() {
   )
 }
 
-root.render(<Counter />)
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+)
