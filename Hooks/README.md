@@ -143,13 +143,103 @@ React-router-dom :-
 It is a open source react library which is used to build single page applications fully featured with client side routing as well as server side routing that too enables dynamic routing, that also routing(loads the content without refreshing the page even when user navigate between page.)
 -> Now, you can use Link tag for navigating between pages with refreshing
 
-Link -> BrowserRouter(APP)
+Link -> BrowserRouter(APP) -> to enablen routings in tour application 
+
+Route -> It checks the path if matches then it will load the respective component
+
+<Routes>
+<Route path = "/home" element = {<Home />}/>  
+<Route path = "/services" element = {<Services />}/>
+</Routes>
+
+<BrowserRouter>
+App.jsx
+</BrowserRouter>
+
+<Routes>
+<Route path = "/cart" element = {<Cart />} />
+</Routes>
+
+
+-> /home -> 
+-> /about
+-> /services
+
 used to build single page applications
 library
 fully featured cliend side and server side routing 
 dynamic routing
 display pages and allow userd to navigate them
- page is never refreshed  instead the content is dynamically fetched based on the URL
+page is never refreshed  instead the content is dynamically fetched based on the URL
+-----------------------------------------------------------------------------------------------------------
+
+need to load a webpage in my application -> 
+a href = "" target = "self" -> refresh -> 
+Index.html ->
+login -> a href = "./login.html" login.html -> refresh
+registration -> a href = "./register.html" register.html -> refresh
+
+registration  once form submit --> index.html
+
+react -> dynamic web applications -> SPA -> navigations ->Home -> About page -> NAVbar -> X -> Link
+
+react-router-dom -> 
+npm i react-router-dom
+package.json -> dependencies -> react-router-dom : "^6.30.0"
+http://localhost:5173/login
+<Link to = "./about">About</Link>
+<Link to = "./Contact">Contact</Link>
+<Link to = "./login">Login</Link>
+
+App.jsx -> {
+    <BrowserRouter>
+    <Header />
+    <Banner />
+    <Routes>
+    <Route path = "/Contact" element = {<Contact />} />
+    <Route path = "/about" element = {<About />} />
+    </Routes>
+    </BrowserRouter>
+
+}
+
+About.jsx -> <h1>This is About Page </h1>
+Contact.jsx -> <h1>This is Contact page</h1>
+Login.jsx -> <h1>This is login page
+
+instagram -> profile section -> newsfeed -> 20reels -> 
+-----------------------------------------------------------------------------------------------------
+To prevent unnecessary re-renders
+UseMemo :- 
+Usememo is used to memoize result values
+memoize or memoizing -> Caching -> persisting -> storing
+eg., website ->  
+Generally we use useMemo, to optimize the applications / components by preventing un necessary re-renders 
+it deals with the result values
+
+useMemo(()=>{}, [])
+
+
+UseCallback
+useRef
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

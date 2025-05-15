@@ -16,21 +16,21 @@ const Navbar = () => {
                                 <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/about">About</a>
+                                <Link className="nav-link active" aria-current="page" to="/about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/services">Services</a>
+                                <Link className="nav-link active" aria-current="page" to="/services">Services</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/contact">Contact</a>
+                                <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/login">SignIn</a>
+                                <Link className="nav-link active" aria-current="page" to="/login">SignIn</Link>
                             </li>
                         </ul>
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
+                            <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
