@@ -1,6 +1,10 @@
 import React, { useMemo, useState } from 'react'
 import Child from './Child'
 
+const arr = [];
+//1st render -> [f] -> #500 ->0x500 -> 
+//2nd render  -> [f, f] #600  -> arr[0] == arr[1] -> false
+
 const UseMemo = () => {
     const [count, setCount] = useState(0)
     const [name, setName] = useState("john")
@@ -22,6 +26,7 @@ const UseMemo = () => {
             return num2;
         }
     }
+    arr.push(fibonacci)
     function hello() {
         console.log("hello is calling")
         return "hello this is usememo"

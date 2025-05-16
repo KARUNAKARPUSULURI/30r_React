@@ -220,8 +220,16 @@ it deals with the result values
 useMemo(()=>{}, [])
 
 
-UseCallback
+UseCallback:- 
+cache function
+
+
+
+
+
+
 useRef
+-----------------------------------------------------------
 
 
 
