@@ -12,6 +12,8 @@ import SingleProduct from './Tasks/Auth/SingleProduct'
 import PageNotFound from './Tasks/Auth/PageNotFound'
 import UseMemo from './UseMemo/UseMemo'
 import Spinner from './Lazy/Spinner'
+import UseContext from './UseContext/UseContext'
+import UseRef from './UseRef/UseRef'
 // import UseCallback from './UseCallback/UseCallback'
 const UseCallback = lazy(() => import("./UseCallback/UseCallback"))
 const Register = lazy(() => import("./Tasks/Auth/Register"))
@@ -23,12 +25,14 @@ function App() {
   // if you don’t specify a key at all React will use  item’s index in the array as its key 
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <UseRef />
+      {/* <UseContext /> */}
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <UseCallback />
       </Suspense>
       <Suspense fallback={<Spinner />}>
         <Register />
-      </Suspense>
+      </Suspense> */}
       {/* <UseCallback /> */}
       {/* <UseMemo /> */}
       {/* <Register />
