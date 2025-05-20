@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { loginApiData, postRegisterData } from "../../Services/api";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     const [loginFormData, setloginFormData] = useState({
@@ -16,7 +17,6 @@ const Login = () => {
         loginApiData(loginFormData).then(data => setData(data))
         setloginFormData({username: "", password: "", email: "", gender: ""})
         localStorage.setItem("credentials", JSON.stringify(data))
-        window.location.href = "./home"
     }
 
     return (
@@ -28,6 +28,9 @@ const Login = () => {
                 <label htmlFor="password">Password : </label>
                 <input type="password" value={loginFormData.password} placeholder="enter password" id="password" name="password" onChange={handleChange} /><br />
                 <button type="submit">Login</button>
+                <div>
+                    <Link to = "/register">Doesn't have an account? Please SignUp!!</Link>
+                </div>
             </form>
         </>
     )

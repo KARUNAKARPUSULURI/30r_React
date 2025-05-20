@@ -226,6 +226,37 @@ cache function
 useRef :- 
 -----------------------------------------------------------
 
+useContext :- 
+
+it is also a hook, 
+why? -> to prevent prop drilling ->
+
+app.js -> parent.js -> child.js -> gc,js -> 
+context :- it is used to share data globally
+
+provider :- which passes the data to wrapped components
+<Myprovider.provider>
+ //wrap
+ parent.jsx
+ app.jsx
+ gc.jsx
+</myprovider.provider>
+<Header>
+consumer :- which is used to receive data
+
+step :- 
+need to create a context :- createContext(); //
+need to check what is taking as an args
+need to check what is returning? 
+----------------------------------------------
+step 2:- 
+
+
+
+
+-------------------
+useReducer :- 
+
 
 
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { postRegisterData } from "../../Services/api";
+import { Link } from "react-router-dom";
 
 const Register = () => {
     const [registerFormData, setRegisterFormData] = useState({
@@ -43,6 +44,9 @@ const Register = () => {
                 <label htmlFor="password">Password : </label>
                 <input type="password" value={registerFormData.password} placeholder="enter password" id="password" name="password" onChange={handleChange} /><br />
                 <button type="submit">Register</button>
+                <div>
+                    <Link to={"/login"}>Already have an account? Please SignIn!</Link>
+                </div>
             </form>
         </>
     )
