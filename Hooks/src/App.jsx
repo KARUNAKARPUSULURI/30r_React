@@ -1,7 +1,6 @@
 import React, { lazy, Suspense, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 // import Register from './Tasks/Auth/Register'
 import Login from './Tasks/Auth/Login'
 import Navbar from './React_Router_Dom/Navbar'
@@ -15,6 +14,7 @@ import Spinner from './Lazy/Spinner'
 import UseContext from './UseContext/UseContext'
 import UseRef from './UseRef/UseRef'
 import UseReducer from './UseReducer/UseReducer'
+import Antd from './CSS_Libraries/Antd'
 // import UseCallback from './UseCallback/UseCallback'
 const UseCallback = lazy(() => import("./UseCallback/UseCallback"))
 const Register = lazy(() => import("./Tasks/Auth/Register"))
@@ -26,7 +26,8 @@ function App() {
   // if you don’t specify a key at all React will use  item’s index in the array as its key 
   return (
     <>
-      <UseReducer />
+      <Antd />
+      {/* <UseReducer /> */}
       {/* <UseRef /> */}
       {/* <UseContext /> */}
       {/* <Suspense fallback={<div>Loading...</div>}>
