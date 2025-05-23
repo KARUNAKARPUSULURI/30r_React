@@ -15,6 +15,9 @@ import UseContext from './UseContext/UseContext'
 import UseRef from './UseRef/UseRef'
 import UseReducer from './UseReducer/UseReducer'
 import Antd from './CSS_Libraries/Antd'
+import ImagePreview from './Previews/ImagePreview'
+import Gallery from './Previews/gallery'
+import Audio from './Uploads/Audio'
 // import UseCallback from './UseCallback/UseCallback'
 const UseCallback = lazy(() => import("./UseCallback/UseCallback"))
 const Register = lazy(() => import("./Tasks/Auth/Register"))
@@ -26,7 +29,10 @@ function App() {
   // if you don’t specify a key at all React will use  item’s index in the array as its key 
   return (
     <>
-      <Antd />
+      <Audio />
+      {/* <Gallery /> */}
+      {/* <ImagePreview /> */}
+      {/* <Antd /> */}
       {/* <UseReducer /> */}
       {/* <UseRef /> */}
       {/* <UseContext /> */}
