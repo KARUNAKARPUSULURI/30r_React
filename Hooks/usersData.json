@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "c982",
+      "student_name": "karunakasr",
+      "age": "123",
+      "gender": "male"
+    },
+    {
+      "id": "8599",
+      "student_name": "Hemanth",
+      "age": "12",
+      "gender": "male"
+    },
+    {
+      "id": "2608",
+      "student_name": "Chaui",
+      "age": "12",
+      "gender": "male"
+    },
+    {
+      "id": "89f7",
+      "student_name": "harish",
+      "age": "12",
+      "gender": "male"
+    }
+  ]
+}

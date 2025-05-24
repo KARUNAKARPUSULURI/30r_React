@@ -18,6 +18,8 @@ import Antd from './CSS_Libraries/Antd'
 import ImagePreview from './Previews/ImagePreview'
 import Gallery from './Previews/gallery'
 import Audio from './Uploads/Audio'
+import TodoList from './TodoList/TodoList'
+import LayOut from './TodoList/Layout'
 // import UseCallback from './UseCallback/UseCallback'
 const UseCallback = lazy(() => import("./UseCallback/UseCallback"))
 const Register = lazy(() => import("./Tasks/Auth/Register"))
@@ -29,7 +31,9 @@ function App() {
   // if you don’t specify a key at all React will use  item’s index in the array as its key 
   return (
     <>
-      <Audio />
+      <LayOut />
+      {/* <TodoList /> */}
+      {/* <Audio /> */}
       {/* <Gallery /> */}
       {/* <ImagePreview /> */}
       {/* <Antd /> */}
