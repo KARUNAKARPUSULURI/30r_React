@@ -32,11 +32,38 @@ const server = http.createServer((req, res) => {
             const updatedData = JSON.parse(body); //{}
             const data = JSON.parse(fs.readFileSync(filePath, "utf-8"))
             const splittedUrl = req.url.split("/") //[] -> 3 -> 2
-            const uId = splittedUrl[splittedUrl.length - 1] 
+            const uId = splittedUrl[splittedUrl.length - 1]
             const matchedIndex = data.findIndex(obj => obj.id == uId)
-            data[matchedIndex] = {id : Number(uId), ...updatedData} 
+            data[matchedIndex] = { id: Number(uId), ...updatedData }
             fs.writeFileSync(filePath, JSON.stringify(data))
             res.end(JSON.stringify(data))
         })
+    }
+    else if (req.url.startsWith("/posts/") && req.method == "PATCH") {
+        let body = "";
+        req.on("data", (chunk) => body += chunk.toString());
+        req.on("end", () => {
+            const updatedData = JSON.parse(body); //{}
+            const data = JSON.parse(fs.readFileSync(filePath, "utf-8"))
+            const splittedUrl = req.url.split("/") //[] -> 3 -> 2
+            const uId = splittedUrl[splittedUrl.length - 1]
+            const matchedIndex = data.findIndex(obj => obj.id == uId)
+            data[matchedIndex] = { ...data[matchedIndex], ...updatedData }
+
+            //data[matchedIndex] = {id : 2, name : "karunakar", age : 30}
+            //updatedData = {name : "chaitanya"}
+            //data[matchedIndex] = {id : 2, name : "karunakar", age : 30, name : "chaitanya"}
+            fs.writeFileSync(filePath, JSON.stringify(data))
+            res.end(JSON.stringify(data))
+        }) //"posts/4"
+    }else if (req.url.startsWith("/posts/") && req.method == "DELETE"){
+        const splittedUrl = req.url.split("/")
+        const uId = splittedUrl[splittedUrl.length - 1] //getting id
+        const data = JSON.parse(fs.readFileSync(filePath, "utf-8")); //[{}, {}, ...]
+        const filteredData = data.filter(obj => obj.id != uId) //[{},{},{}]
+        fs.writeFileSync(filePath, JSON.stringify(filteredData))
+        res.end(JSON.stringify(filteredData))
+    }else{
+        res.end("page not found")
     }
 }).listen(4000)
