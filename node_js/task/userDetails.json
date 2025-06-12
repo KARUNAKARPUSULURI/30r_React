@@ -12,5 +12,26 @@
         "email": "chau@gmail.com",
         "password": "chai12345",
         "confirmPassword": "chai12345"
+    },
+    {
+        "id": 3,
+        "username": "beta",
+        "email": "beta@gmail.com",
+        "password": "beta123",
+        "confirmPassword": "beta123"
+    },
+    {
+        "id": 4,
+        "username": "karunpusuluri@gmail.com",
+        "password": "123456",
+        "email": "",
+        "confirmPassword": ""
+    },
+    {
+        "id": 5,
+        "username": "naresh@gmail.com",
+        "password": "naresh",
+        "email": "naresh@gmail.com",
+        "confirmPassword": "naresh"
     }
 ]

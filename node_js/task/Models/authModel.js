@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const userFilePath = path.resolve("userDetails.json");
+const userFilePath = path.resolve("task","userDetails.json");
 
 const getAllUsers = () => {
     try {
