@@ -1,0 +1,19 @@
+{
+  "name": "libraries",
+  "version": "1.0.0",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch libraries.js",
+    "demo": "node --watch demo.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
