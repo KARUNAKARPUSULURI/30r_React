@@ -1,0 +1,166 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "gender": "Male",
+            "class": "10A"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        },
+        {
+            "id": 3,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "gender": "Female",
+            "class": "10B"
+        }
+    ],
+    "staff": [
+        {
+            "id": 1,
+            "name": "Mr. Anderson",
+            "email": "anderson@example.com",
+            "role": "Math Teacher"
+        },
+        {
+            "id": 2,
+            "name": "Mrs. Parker",
+            "email": "parker@example.com",
+            "role": "Science Teacher"
+        }
+    ],
+    "classes": [
+        {
+            "id": 1,
+            "name": "10A"
+        },
+        {
+            "id": 2,
+            "name": "10B"
+        }
+    ],
+    "subjects": [
+        {
+            "id": 1,
+            "name": "Mathematics",
+            "class": "10A"
+        },
+        {
+            "id": 2,
+            "name": "Science",
+            "class": "10B"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "email": "admin@example.com",
+            "password": "admin123"
+        }
+    ]
+}
