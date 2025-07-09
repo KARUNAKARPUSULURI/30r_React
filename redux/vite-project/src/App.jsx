@@ -4,7 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment, reset } from './redux/actions/actions';
 
 const App = () => {
+  
   const state = useSelector((state) => state.count);
+  const name = useSelector((state) => state.name);
   console.log(state)
   const dispatch = useDispatch();
 
@@ -23,7 +25,7 @@ const App = () => {
       <h1>Routine - Counter App</h1>
       <div>
         <div>
-          <h3>Counter: {state}</h3>
+          <h3>Counter: {state} - {name}</h3>
         </div>
         <div>
           <button onClick={handleDecre}>-</button>
